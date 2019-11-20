@@ -59,6 +59,9 @@ function keypressColorEventHandler(e) {
         let object = drumPads[key];    
         let objectId = object.id;
         document.getElementById(`${objectId}`).setAttribute("class", "pressed");
+        setTimeout(function() {
+            document.getElementById(`${objectId}`).setAttribute("class", "pads");
+        }, 20);
     }
 }
 
