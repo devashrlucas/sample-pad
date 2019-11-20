@@ -2,23 +2,34 @@
     display: grid;
     grid-template-columns:repeat(4, 300px);
     border-style: solid;
-    background-color: yellow;
 }
 
 .container-pads {
-    border-style: solid;
     display: grid;
     grid-template-columns:repeat(3, 300px);
     grid-template-rows: repeat(3, 300px);
-    background-color: blue;
 }
 
 .container-tracks {
     display: grid;
     grid-template-rows: repeat(3, 100px);
-background-color: red;
 }
 
-body {
-    background-color: yellow;
+.pads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  border: 2px solid black;
+  font-size: 3em;
+}
+
+.pressed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  border: 2px solid black;
+  font-size: 3em;
+  background-color: yellow;
 }
