@@ -97,7 +97,7 @@ let toggleEventHandler = function(e) {
 */
 
 
-let getCheckboxes = document.getElementsByClassName('tracks');
+// let getCheckboxes = document.getElementsByClassName('tracks');
 
 
 let toggleOnEventHandler = function(e) {
@@ -106,10 +106,26 @@ let toggleOnEventHandler = function(e) {
    if (tgt == "[object HTMLInputElement]") {
        for (let i = 0; i < 4; i++) {
            if (tgtId == backingTracks[i].id) {
-               backingTracks[i].sound.play();
+               backingTracks[i].sound.pause();
            }
        }
    }
 }
 
+let toggleOffEventHandler = function(e) {
+    let tgt = e.target;
+    let tgtId = tgt.id;
+    if (tgt == "[object HTMLInputElement]") {
+        for (let i = 0; i < 4; i++) {
+            if (tgt.checked) {
+                if (tgtId == backingTracks[i].id) {
+                    backingTracks[i].sound.play();
+            }
+        }
+    }
+  }
+} 
+
+
 document.addEventListener("click", toggleOnEventHandler, true);
+document.addEventListener("click", toggleOffEventHandler, true);
