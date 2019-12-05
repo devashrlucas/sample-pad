@@ -100,11 +100,16 @@ let toggleEventHandler = function(e) {
 let getCheckboxes = document.getElementsByClassName('tracks');
 
 
-let toggleEventHandler = function(e) {
+let toggleOnEventHandler = function(e) {
    let tgt = e.target;
+   let tgtId = tgt.id;
    if (tgt == "[object HTMLInputElement]") {
-       alert('hi');
+       for (let i = 0; i < 4; i++) {
+           if (tgtId == backingTracks[i].id) {
+               backingTracks[i].sound.play();
+           }
+       }
    }
 }
 
-document.addEventListener("click", toggleEventHandler, true);
+document.addEventListener("click", toggleOnEventHandler, true);
