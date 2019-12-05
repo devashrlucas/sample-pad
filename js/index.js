@@ -67,3 +67,44 @@ function keypressColorEventHandler(e) {
 
 document.addEventListener("keypress", keypressSoundEventHandler, true);
 document.addEventListener("keypress", keypressColorEventHandler, true);
+
+
+let backingTracks = {
+    0: {
+        id: "track-1",
+        sound: new Audio("https://sampleswap.org/mp3/artist/555766/Jack-Mayor_United-160.mp3"),
+        description: "ambient",
+    },
+    1: {
+        id: "track-2",
+        sound: new Audio("https://sampleswap.org/mp3/artist/238284/Big-Ot_Coast-160.mp3"),
+        description: "hip hop",
+    },
+    2: {
+        id: "track-3",
+        sound: new Audio("https://sampleswap.org/mp3/artist/80146/Bchill67_Club-Scene-160.mp3"),
+        description: "house",
+    },
+}
+/*
+let toggleEventHandler = function(e) {
+    let tgt = e.target;
+    let tgtId = tgt.id;
+    if (tgt.className === "track"){
+        document.getElementById(`${tgtId}`).setAttribute("checked", "checked");
+    }
+};
+*/
+
+
+let getCheckboxes = document.getElementsByClassName('tracks');
+
+
+let toggleEventHandler = function(e) {
+   let tgt = e.target;
+   if (tgt == "[object HTMLInputElement]") {
+       alert('hi');
+   }
+}
+
+document.addEventListener("click", toggleEventHandler, true);
