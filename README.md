@@ -5,7 +5,8 @@ Interactive web app version of a percussion pad app built using plain HTML, CSS,
 ## Getting Started
 
 The web app can be found at [https://devashrlucas.github.io/sample-pad/](https://devashrlucas.github.io/sample-pad/).
-PLEASE NOTE: this app is designed to work with a keyboard and clicking a pad will not play the sound.
+
+Please note that this app is designed to work with a keyboard and clicking a pad will not play the sound.
 
 ### Prerequisites
 
