@@ -14,10 +14,8 @@
 }
 
 .container-tracks {
-    display: grid;
     margin-left: 10%;
     margin-top: 10%;
-    grid-template-rows: repeat(3, 100px);
 }
 
 .pads {
@@ -40,3 +38,36 @@
   background-color:#3a7bde;
 }
 
+/* Code for toggle switch borrowed from here: https://medium.com/front-end-weekly/creating-a-toggle-switch-in-css-2d23e496d035 */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  top: 1px; /* To give an effect of a circle inside the switch */
+  left: 1px;
+  transition: all 0.3s;
+}
+
+.tracks:checked + .switch::after {
+  left: 20px;
+}
+
+.tracks:checked + .switch {
+  background-color: #7983ff;
+}
+
+.tracks {
+  display: none;
+}
