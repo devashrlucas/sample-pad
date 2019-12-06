@@ -10,6 +10,10 @@ h3, p, .container {
 font-family: 'Roboto', sans-serif;
 }
 
+p {
+  
+}
+
 .container {
     display: grid;
     width: 95%;
@@ -41,7 +45,7 @@ font-family: 'Roboto', sans-serif;
   margin: 5%;
   border: 2px solid black;
   background-color: #616366;
-  font-size: 3em;
+  font-size: 6em;
 }
 
 .pressed {
@@ -56,6 +60,7 @@ font-family: 'Roboto', sans-serif;
 .toggle {
  position: relative;
  top: -25px;
+ font-size: 1.5em;
 }
 /* Code for toggle switch borrowed from here: https://medium.com/front-end-weekly/creating-a-toggle-switch-in-css-2d23e496d035 */
 .switch {
