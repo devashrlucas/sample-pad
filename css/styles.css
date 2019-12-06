@@ -1,10 +1,25 @@
+body {
+  background-color: #b5b8bd;
+}
+
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 50px;
+}
+h3, p, .container {
+font-family: 'Roboto', sans-serif;
+}
+
 .container {
     display: grid;
+    width: 95%;
     grid-template-columns:repeat(4, 300px);
     border-style: solid #000;
+    border-radius: 20px;
     color: #fff;
     background-color: #000;
-    border-radius: 20px;
+    box-shadow: 20px 20px #3a7bde;
+    
 }
 
 
@@ -36,7 +51,7 @@
   margin: 1%;
   border: 2px solid black;
   font-size: 3em;
-  background-color:#3a7bde;
+  background-color: #3a7bde;
 }
 .toggle {
  position: relative;
