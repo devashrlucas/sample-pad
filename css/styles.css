@@ -4,6 +4,7 @@
     border-style: solid #000;
     color: #fff;
     background-color: #000;
+    border-radius: 20px;
 }
 
 
@@ -37,22 +38,27 @@
   font-size: 3em;
   background-color:#3a7bde;
 }
-
+.toggle {
+ position: relative;
+ top: -25px;
+}
 /* Code for toggle switch borrowed from here: https://medium.com/front-end-weekly/creating-a-toggle-switch-in-css-2d23e496d035 */
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 20px;
+  width: 120px;
+  height: 60px;
   background-color: #eee;
-  border-radius: 20px;
+  border-radius: 30px;
+  padding: 1%;
+  margin: 1%;
 }
 
 .switch::after {
   content: "";
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   background-color: white;
   top: 1px; /* To give an effect of a circle inside the switch */
@@ -61,7 +67,7 @@
 }
 
 .tracks:checked + .switch::after {
-  left: 20px;
+  left: 60px;
 }
 
 .tracks:checked + .switch {
