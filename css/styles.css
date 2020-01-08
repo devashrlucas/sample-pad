@@ -38,7 +38,7 @@ p {
     margin-top: 10%;
 }
 
-.pads {
+.pads { 
   display: flex;
   justify-content: center;
   align-items: center;

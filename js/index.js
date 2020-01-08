@@ -86,19 +86,6 @@ let backingTracks = {
         description: "house",
     },
 }
-/*
-let toggleEventHandler = function(e) {
-    let tgt = e.target;
-    let tgtId = tgt.id;
-    if (tgt.className === "track"){
-        document.getElementById(`${tgtId}`).setAttribute("checked", "checked");
-    }
-};
-*/
-
-
-// let getCheckboxes = document.getElementsByClassName('tracks');
-
 
 let toggleOnEventHandler = function(e) {
    let tgt = e.target;
